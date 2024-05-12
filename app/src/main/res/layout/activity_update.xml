@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/images"
+    tools:context=".UpdateActivity">
+
+    <TextView
+        android:id="@+id/editHeading"
+        android:layout_width="291dp"
+        android:layout_height="90dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:fontFamily="@font/poppins"
+        android:text="Edit Information"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/UpdateButton"
+        android:layout_width="38dp"
+        android:layout_height="34dp"
+        android:layout_alignTop="@id/editHeading"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="29dp"
+        android:src="@drawable/baseline_check_24" />
+
+    <EditText
+        android:id="@+id/updatetitle"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/editHeading"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/orange_border"
+        android:backgroundTint="@color/orange2"
+        android:fontFamily="@font/poppins"
+        android:hint="Enter Village Name"
+        android:maxLines="1"
+        android:padding="12dp"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/updatecontent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/updatetitle"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/orange_border"
+        android:backgroundTint="@color/orange2"
+        android:fontFamily="@font/poppins"
+        android:gravity="top"
+        android:hint="Enter description about tour"
+        android:padding="12dp"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+</RelativeLayout>
