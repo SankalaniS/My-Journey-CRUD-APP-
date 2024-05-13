@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
         // Initialize the FloatingActionButton using findViewById
         val addButton = findViewById<FloatingActionButton>(R.id.addButton)
         addButton.setOnClickListener {
-            // Intent to start AddNoteActivity
+            // Intent to start AddInfoActivity
             val intent = Intent(this, AddInfoActivity::class.java)
             startActivity(intent)
         }
